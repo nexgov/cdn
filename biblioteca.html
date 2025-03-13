@@ -1,1 +1,74 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bibliotecario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+        .left {
+            background-color: #f4f4f4;
+            border-right: 2px solid #ddd;
+        }
+        .right {
+            background-color: #ffffff;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Orari di Lavoro</h2>
+            <ul>
+                <li>Lunedì: 9:00 - 13:00</li>
+                <li>Martedì: 14:00 - 18:00</li>
+                <li>Mercoledì: 9:00 - 13:00</li>
+                <li>Giovedì: 14:00 - 18:00</li>
+                <li>Venerdì: 9:00 - 13:00</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Link Utili</h2>
+            <ul>
+                <li><a href="#">OPAC Biblioteca</a></li>
+                <li><a href="#">Bibliowin</a></li>
+                <li><a href="#">Gestione Prestiti</a></li>
+                <li><a href="#">Eventi in Biblioteca</a></li>
+                <li><a href="#">WordPress Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
