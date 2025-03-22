@@ -54,6 +54,13 @@
                 hours++;
             }
 
+            // Resetta il timer se sono passate 8 ore (28.800 secondi)
+            if (hours >= 8) {
+                hours = 0;
+                minutes = 0;
+                seconds = 0;
+            }
+
             // Salva il tempo ogni volta che cambia
             localStorage.setItem('seconds', seconds);
             localStorage.setItem('minutes', minutes);
