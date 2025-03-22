@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Timer di Lavoro</title>
+        <title>Timer di Lavoro</title>
     <style>
         body {
+            background-color: #cd2653;
+            color: white; /* Puoi cambiare il colore del testo se vuoi */
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Imposta l'altezza al 100% della finestra */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        button {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 10px;
+        h1 {
+            font-size: 3em;
         }
-        #timer {
-            font-size: 36px;
-        }
+
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.14.0/dist/css/bootstrap-italia.min.css">
 </head>
 <body>
 
     <div id="timer">00:00:00</div>
-    <button onclick="startTimer()">Inizia</button>
-    <button onclick="stopTimer()">Ferma</button>
+    <button class="btn btn-outline-warning disabled" onclick="startTimer()">Inizia</button>
+    <button class="btn btn-outline-warning disabled" onclick="stopTimer()">Ferma</button>
 
     <script>
         let timer;
@@ -91,6 +92,5 @@
         }
 
     </script>
-
 </body>
 </html>
